@@ -1,70 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-		<title>R2Stat.com</title>
-		<style>
-			html,
-			body {
-				width : 100%;
-				height: 100%;
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R2Stats | Cloudflare R2 Usage Tracker & Quota Monitor</title><meta name="title" content="R2Stats | Cloudflare R2 Usage Tracker & Quota Monitor"><meta name="description" content="Track your Cloudflare R2 storage usage and free tier limits in real-time. Private, client-side monitoring tool for R2 Class A and Class B operations. No login required."><meta name="keywords" content="Cloudflare R2, R2 usage tracker, R2 quota monitor, Cloudflare R2 pricing, R2 free tier, R2 stats, object storage monitoring, Cloudflare API, GraphQL API"><meta name="robots" content="index, follow"><link rel="canonical" href="https://r2stat.com/"><meta property="og:type" content="website"><meta property="og:url" content="https://r2stat.com/"><meta property="og:title" content="R2Stats - Cloudflare R2 Usage Tracker"><meta property="og:description" content="Track your Cloudflare R2 storage usage and free tier limits in real-time. Private, client-side monitoring tool for R2 Class A and Class B operations. No login required."><meta property="og:image" content="https://r2stat.com/assets/images/og.jpg"><meta property="og:logo" content="https://r2stat.com/assets/favicon/favicon-32x32.png"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://r2stat.com/"><meta property="twitter:title" content="R2Stats - Cloudflare R2 Usage Tracker"><meta property="twitter:description" content="Track your Cloudflare R2 storage usage and free tier limits in real-time. Private, client-side monitoring tool for R2 Class A and Class B operations. No login required."><meta property="twitter:image" content="https://r2stat.com/assets/images/og.jpg"><link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png"><link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"><link rel="manifest" href="site.manifest"><meta name="theme-color" content="#f38020"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script src="https://cdn.jsdelivr.net/npm/chart.js?2828418bec"></script><link rel="preload" href="assets/css/style.css?2828418bec" as="style"><link rel="stylesheet" href="assets/css/style.css?2828418bec"><script async src="https://www.googletagmanager.com/gtag/js?id=G-VDE5MJ82HQ"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-VDE5MJ82HQ")</script><script type="application/ld+json">{
+			"@context": "https://schema.org",
+			"@type": "WebApplication",
+			"name": "R2Stats",
+			"url": "https://r2stat.com/",
+			"description": "Professional monitoring dashboard for Cloudflare R2 Storage. Track daily Class A and Class B operations and forecast monthly quotas.",
+			"applicationCategory": "DeveloperApplication",
+			"genre": "Cloud Computing Tool",
+			"operatingSystem": "Any",
+			"offers": {
+				"@type": "Offer",
+				"price": "0",
+				"priceCurrency": "USD"
+			},
+			"featureList": [
+				"Real-time Cloudflare GraphQL API integration",
+				"Track Class A (Writes) & Class B (Reads) operations",
+				"Monthly usage forecasting and prediction",
+				"Local-only storage for API Tokens (Privacy First)",
+				"Visual usage charts with Chart.js?2828418bec",
+				"PWA support for mobile monitoring"
+			],
+			"author": {
+				"@type": "Person",
+				"name": "jacoka"
 			}
-
-			html {
-				display: table;
-				font-family: Lato, "Segoe UI", Avenir, Ubuntu, Tahoma, Verdana, Helvetica, sans-serif;
-			}
-
-			body {
-				display: table-cell;
-				vertical-align: middle;
-				text-align: center;
-			}
-
-			h1 {
-				font-size: 4em;
-				font-weight: normal;
-				text-transform: lowercase;
-			}
-
-			svg {
-				width : 250px;
-				height: 250px;
-			}
-		</style>
-	</head>
-	<body>
-		<svg xmlns="http://www.w3.org/2000/svg" id="coming_soon" enable-background="new 0 0 512 512" height="512px" viewBox="0 0 512 512" width="512px">
-			<g>
-				<g>
-					<circle cx="319.528" cy="256" fill="#95d6a4" r="184.972" data-original="#95D6A4" class="active-path" style="fill:#E33B3B" data-old_color="#95d6a4" />
-					<path d="m319.528 71.029c-4.682 0-9.322.178-13.917.52 95.656 7.115 171.055 86.976 171.055 184.451s-75.399 177.336-171.055 184.452c4.595.342 9.235.52 13.917.52 102.157-.001 184.972-82.815 184.972-184.972s-82.815-184.971-184.972-184.971z" fill="#78c2a4" data-original="#78C2A4" class="" style="fill:#FB5252" data-old_color="#78c2a4" />
-					<circle cx="319.528" cy="256" fill="#f4fbff" r="142.033" data-original="#F4FBFF" class="" style="fill:#F4FBFF" />
-					<path d="m319.528 113.967c-4.321 0-8.594.204-12.817.582 72.435 6.48 129.215 67.33 129.215 141.451s-56.78 134.97-129.215 141.451c4.223.377 8.496.582 12.817.582 78.443 0 142.033-63.59 142.033-142.032 0-78.444-63.59-142.034-142.033-142.034z" fill="#daf1f4" data-original="#DAF1F4" class="" />
-					<g>
-						<path d="m38.872 149.21h79.098c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-79.098c-4.142 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m115.258 185.317h-31.246c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h31.246c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m7.5 237.327h76.512c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5h-76.512c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m125.47 370.289c0-4.143-3.358-7.5-7.5-7.5h-79.098c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h79.098c4.142 0 7.5-3.357 7.5-7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m115.258 311.683h-31.246c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h31.246c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m91.512 282.173c0-4.143-3.358-7.5-7.5-7.5h-76.512c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h76.512c4.142 0 7.5-3.357 7.5-7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m319.529 165.83c4.143 0 7.5-3.357 7.5-7.5v-11.448c0-4.143-3.357-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v11.448c0 4.143 3.357 7.5 7.5 7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m401.99 173.538c-2.93-2.928-7.678-2.928-10.607 0l-8.095 8.095c-2.929 2.93-2.929 7.678 0 10.607 2.931 2.929 7.678 2.928 10.607 0l8.095-8.095c2.928-2.929 2.928-7.677 0-10.607z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m417.199 248.5c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h11.447c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m393.895 319.759c-2.93-2.928-7.678-2.928-10.607 0-2.929 2.93-2.929 7.678 0 10.607l8.095 8.095c2.931 2.929 7.678 2.928 10.607 0 2.929-2.93 2.929-7.678 0-10.607z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m312.029 353.67v11.447c0 4.143 3.357 7.5 7.5 7.5s7.5-3.357 7.5-7.5v-11.447c0-4.143-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m245.162 319.759-8.095 8.095c-2.929 2.93-2.929 7.678 0 10.607 2.93 2.929 7.678 2.928 10.606 0l8.095-8.095c2.929-2.93 2.929-7.678 0-10.607-2.928-2.928-7.677-2.928-10.606 0z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m210.411 248.5c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h11.448c4.142 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m255.769 181.633-8.095-8.095c-2.929-2.928-7.678-2.928-10.606 0-2.929 2.93-2.929 7.678 0 10.607l8.095 8.095c2.93 2.929 7.678 2.928 10.606 0 2.929-2.929 2.929-7.677 0-10.607z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m359.859 256c0-4.143-3.357-7.5-7.5-7.5h-25.33v-55.684c0-4.143-3.357-7.5-7.5-7.5s-7.5 3.357-7.5 7.5v63.184c0 4.143 3.357 7.5 7.5 7.5h32.83c4.142 0 7.5-3.357 7.5-7.5z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m461.741 254.762c4.135-.251 7.283-3.806 7.032-7.94-4.771-78.703-70.327-140.354-149.245-140.354-82.452 0-149.532 67.08-149.532 149.533 0 82.452 67.08 149.532 149.532 149.532 73.869 0 136.9-54.122 147.865-127.157.615-4.096-2.207-7.915-6.304-8.53-4.086-.613-7.915 2.206-8.53 6.304-9.85 65.614-66.506 114.384-133.031 114.384-74.181 0-134.532-60.351-134.532-134.532s60.351-134.533 134.532-134.533c71.001 0 129.98 55.461 134.272 126.263.25 4.132 3.802 7.27 7.941 7.03z" data-original="#000000" class="" style="fill:#000000" />
-						<path d="m319.528 63.529c-26.381 0-52.228 5.473-76.018 15.708h-132.329c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h104.113c-14.077 9.06-27.036 19.988-38.462 32.604-2.78 3.069-2.546 7.812.524 10.593 3.071 2.781 7.812 2.546 10.594-.524 33.602-37.102 81.561-58.381 131.578-58.381 97.858 0 177.472 79.613 177.472 177.471 0 97.857-79.613 177.471-177.472 177.471-97.858 0-177.471-79.613-177.471-177.471 0-34.268 9.789-67.528 28.307-96.186 2.248-3.479 1.25-8.121-2.229-10.369-3.479-2.247-8.121-1.251-10.37 2.229-20.09 31.088-30.708 67.163-30.708 104.326 0 67.766 35.206 127.458 88.285 161.763h-104.16c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h132.225c23.36 10.099 49.097 15.708 76.122 15.708 106.128 0 192.471-86.342 192.471-192.471s-86.343-192.471-192.472-192.471z" data-original="#000000" class="" style="fill:#000000" />
-					</g>
-				</g>
-			</g>
-		</svg>
-	</body>
-</html>
+		}</script></head><body><div class="card"><div class="header"><h1>R2Stats</h1><p>Cloudflare R2 Usage Tracker</p></div><label for="apiToken">API Token</label><div class="input-wrapper"><input type="password" id="apiToken" placeholder="Enter Cloudflare API Token..." spellcheck="false"> <button type="button" id="togglePassword" class="toggle-btn" aria-label="Toggle password visibility"><svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></button></div><label for="accountId">Account ID</label> <input type="text" id="accountId" placeholder="Enter Account ID..." spellcheck="false"> <button id="updateStats">Monitor Usage</button></div><div class="card hidden" id="results"><div class="stats-grid"><div><span class="label-text">Class B Reads</span><div id="valB" class="stat-val" aria-live="polite">0</div><div class="progress-container" role="progressbar" aria-labelledby="valB" aria-valuemin="0" aria-valuemax="10000000"><div id="barB" class="progress-bar"></div></div></div><div><span class="label-text">Class A Writes</span><div id="valA" class="stat-val" aria-live="polite">0</div><div class="progress-container" role="progressbar" aria-labelledby="barA" aria-valuemin="0" aria-valuemax="10000000"><div id="barA" class="progress-bar"></div></div></div></div><div id="prediction" data-head="" data-body="Calculating..."></div><div class="chart-container"><canvas id="usageChart"></canvas></div></div><div class="share-container"><p>Spread the word:</p><div class="share-buttons"><a href="https://www.facebook.com/sharer/sharer.php?u=https://r2stat.com" target="_blank" class="share-btn fb" aria-label="Share on Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook </a><a href="https://twitter.com/intent/tweet?url=https://r2stat.com&text=Check out R2Stats - A private Cloudflare R2 usage tracker!" target="_blank" class="share-btn x-corp" aria-label="Share on X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"/></svg> Post</a></div></div><div class="seo-section"><div class="seo-card"><h3>Secure & Private</h3><p>R2Stats is a client-side <strong>Cloudflare R2 monitoring tool</strong>. Your API tokens are stored locally in your browser's <strong>localStorage</strong> and are never transmitted to our servers. All requests are proxied via Vercel to the official Cloudflare GraphQL API.</p></div><div class="seo-card"><h2>About R2Stats Tracker</h2><p>Managing <strong>Cloudflare R2 storage costs</strong> requires tracking your daily operations. Our tool helps developers monitor the <strong>R2 Free Tier limits</strong> (10M Class B and 1M Class A operations per month) to avoid unexpected bills.</p><p>Key features: Real-time <strong>Cloudflare GraphQL API</strong> integration, usage forecasting, and mobile-ready PWA dashboard for <strong>R2 object storage</strong>.</p></div><div class="footer"><div>2026 &#8226; Built for the</div><div>Cloudflare Community <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32"><path d="M22.010 22.458c0.198-0.672 0.12-1.292-0.208-1.75-0.297-0.422-0.802-0.667-1.411-0.698l-11.547-0.146c-0.073 0-0.141-0.036-0.177-0.099-0.036-0.057-0.047-0.13-0.031-0.208 0.042-0.109 0.151-0.193 0.276-0.203l11.646-0.151c1.38-0.068 2.88-1.182 3.406-2.552l0.661-1.734c0.031-0.078 0.042-0.151 0.021-0.224-0.75-3.396-3.776-5.927-7.401-5.927-3.339 0-6.167 2.156-7.182 5.146-0.656-0.484-1.49-0.75-2.391-0.661-1.604 0.156-2.891 1.443-3.047 3.047-0.036 0.411-0.010 0.818 0.083 1.188-2.62 0.078-4.708 2.219-4.708 4.854 0 0.229 0.021 0.464 0.047 0.703 0.021 0.109 0.115 0.193 0.224 0.193h21.307c0.125 0 0.234-0.083 0.276-0.203zM25.688 15.042c-0.104 0-0.214 0-0.318 0.016-0.078 0-0.141 0.057-0.172 0.13l-0.448 1.568c-0.198 0.672-0.125 1.292 0.208 1.755 0.297 0.422 0.807 0.661 1.417 0.693l2.453 0.151c0.078 0 0.141 0.031 0.182 0.094 0.036 0.057 0.042 0.141 0.026 0.203-0.036 0.115-0.151 0.203-0.271 0.208l-2.563 0.151c-1.391 0.063-2.88 1.182-3.406 2.552l-0.182 0.479c-0.042 0.094 0.026 0.188 0.13 0.188h8.797c0.099 0 0.193-0.068 0.224-0.167 0.151-0.547 0.234-1.12 0.234-1.708 0-3.469-2.833-6.302-6.313-6.302z"/></svg></div></div></div><script src="assets/js/index.js?2828418bec" defer="defer"></script></body></html>
