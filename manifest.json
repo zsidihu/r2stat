@@ -1,0 +1,57 @@
+{
+  "name": "R2Stat | Cloudflare R2 Tracker",
+  "short_name": "R2Stat",
+  "description": "Track your Cloudflare R2 storage usage and free tier limits in real-time.",
+  "start_url": "/?utm_source=pwa",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f38020",
+  "orientation": "portrait-primary",
+  "categories": ["developer", "utilities"],
+  "icons": [
+    {
+      "src": "./assets/favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/favicon/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./assets/images/screenshot-mobile.png",
+      "sizes": "1242x2688",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "R2Stat Mobile Dashboard"
+    },
+    {
+      "src": "./assets/images/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "R2Stat Desktop Monitor"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Monitor Usage",
+      "url": "/#monitor",
+      "description": "Jump straight to usage monitoring"
+    },
+    {
+      "name": "FAQ",
+      "url": "/#faq",
+      "description": "Frequently Asked Questions"
+    }
+  ]
+}
