@@ -8,4 +8,4 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-Sitemap: https://vocalremover.dev/sitemap.xml
+Sitemap: https://r2stat.com/sitemap.xml
